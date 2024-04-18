@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIMPLE LANDING PAGE USING HTML & CSS</title>
+
+    <style type="text/css">
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+
+        header {
+            width: 100%;
+            height: 100vh;
+            background-image: url('LPI.jpg');
+            background-size: cover;
+            font-family: sans-serif;
+        }
+        nav{
+            width: 100%;
+            height: 100px;
+            color: black;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .logo{
+            
+            font-size: 1.5em;
+            letter-spacing: 0.5px;
+            background: rgb(36, 220, 214);
+            padding: 10px 10px;
+            border-radius: 7px;
+        }
+        .menu a{
+            height: 20;
+            width: 30;
+            font-size: 15px;
+            text-decoration: none;
+            color: black;
+            padding: 7px 10px;
+            background: orchid;
+            border-radius: 5px;
+            position: relative;
+        }
+        .menu a:before{
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 0%;
+            height: 100%;
+            border-bottom:  solid indigo;
+            transition: 0.2s linear;
+
+        }
+
+        .menu a:hover:before{
+            width: 80px;
+        }
+        .Register a{
+            height: 100px;
+            width: 50px;
+            text-decoration: none;
+            padding: 10px 20px;
+            font-size: 1.5em;
+            color: black;
+            background: rgb(36, 220, 214);
+            border-radius: 8px;
+            transition: 0.3s;
+        }
+        .Register a:hover{
+            background: red;
+            border: 1px solid indianred;
+            
+        }
+        .h-txt{
+            max-width: 700px;
+            position: absolute;
+            top: 40%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+            text-align: center;
+            color: white;
+
+        }
+        .h-txt span{
+            letter-spacing: 5px;
+        }
+        .h-txt h1{
+            font-size: 1.8em;
+        }
+
+        .h-txt a{
+            text-decoration: none;
+            background: rgb(237, 252, 74);
+            color: rgb(23, 12, 12);
+            padding: 5px 10px;
+            height: 300px;
+        }
+        .h-txt a:hover{
+            background: orange;
+            border: 1px solid indianred;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                Travel-X
+            </div>
+            <div class="menu">
+                <a href="#">Home</a>
+                <a href="#">Hill Station</a>
+                
+                <a href="#">Best offer</a>
+                <a href="#">Contact</a>
+            </div>
+            <div class="Register">
+                <a href="#">Register</a>
+            </div>
+        </nav>
+        <section class="h-txt">
+            <span>ENJOY</span>
+            <h1>International Travel Agency</h1>
+
+            <br>
+            <a href="#">Book Your Trip !</a>
+
+        </section>
+        
+    </header>
+</body>
+</html>
